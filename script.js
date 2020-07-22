@@ -88,6 +88,12 @@ const decimal = document.querySelector('.decimal')
   updateScreen(currentNumber) 
 })
 
+const percentage = document.querySelector('.percentage') 
+  percentage.addEventListener ('click', () => {
+  return currentNumber /=100 
+  updateScreen(currentNumber) 
+})
+
 inputDecimal = (dot) => {
   if(currentNumber.includes('.')) {
     return }
